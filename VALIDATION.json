@@ -38,7 +38,7 @@
     "source": "Screenshot provided by user; original version confirmed working by user. Color/display logic unchanged."
   },
   "latest_nightly_check": "not performed; required before claiming current Nightly compatibility",
-  "registry_source_repository": "GitHub repository created; source upload in progress",
+  "registry_source_repository": "Public source repository uploaded and independently cloned; package reproduced with matching SHA256",
   "icon": {
     "width": 400,
     "height": 400,
@@ -57,6 +57,11 @@
     "private_key": "stored outside repository, encrypted for the Windows account"
   },
   "repository": "https://github.com/fanthomas-creator/portage-better-ping-display",
-  "repository_rules": "Prepared locally; remote enforcement pending",
-  "ci_local_validation": "cargo fmt, cargo test --locked and scripts/check_project.py passed"
+  "repository_rules": "Active on GitHub: reviewed changes to default branch, required checks, blocked force pushes/deletions; owner-controlled release tags",
+  "ci_local_validation": "cargo fmt, cargo test --locked and scripts/check_project.py passed",
+  "github_ci": {
+    "status": "passed",
+    "run": "https://github.com/fanthomas-creator/portage-better-ping-display/actions/runs/43058873585",
+    "scope": "Formatting, independent Rust logic, project metadata and reproducible package; not a full game build"
+  }
 }
