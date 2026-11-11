@@ -1,0 +1,52 @@
+[mod]
+id = "portage_better_ping_display"
+version = "0.1.1"
+priority = 100
+
+[compatibility]
+horizon_revision = "fdc87aecdbd116bf1e08adcd062fcbaea8c2e2ca"
+
+[[module]]
+id = "runtime"
+file = "crates/horizon-client-render/src/tab_list.rs"
+name = "portage_better_ping_display"
+source = "runtime.rs"
+visibility = "pub"
+
+[[injection]]
+id = "list"
+kind = "HEAD"
+target = "horizon_client::game::native_hooks::Game<'_>::native_mods"
+helper = "list.rs"
+bindings = [
+  { name = "mods", ty = "&mut Vec<crate::game::native_hooks::NativeMod>", value = "&mut *mods" },
+]
+
+[[injection]]
+id = "frame"
+kind = "HEAD"
+target = "horizon_client::game::native_hooks::Game<'_>::native_frame"
+helper = "frame.rs"
+bindings = [
+  { name = "game", ty = "&mut crate::game::Game<'_>", value = "&mut *self" },
+]
+
+[[injection]]
+id = "cache"
+kind = "HEAD"
+target = "horizon_client_render::tab_list::TabList::layout"
+helper = "cache.rs"
+bindings = [
+  { name = "tab", ty = "&mut crate::tab_list::TabList", value = "&mut *self" },
+]
+
+[[injection]]
+id = "name"
+kind = "HEAD"
+cancellable = true
+target = "horizon_client_render::tab_list::name_for_display"
+helper = "name.rs"
+bindings = [
+  { name = "player", ty = "&crate::tab_list::TabPlayer", value = "p" },
+  { name = "board", ty = "&crate::scoreboard::Scoreboard", value = "board" },
+]

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="300" viewBox="0 0 960 300" role="img" aria-labelledby="title desc">
+  <title id="title">Ping color reference</title>
+  <desc id="desc">Gradient illustration: green at 0 milliseconds, yellow at 150, red at 300 or above. Unknown values are gray.</desc>
+  <defs><linearGradient id="latency"><stop stop-color="#00e676"/><stop offset=".5" stop-color="#d6cd30"/><stop offset="1" stop-color="#e53935"/></linearGradient></defs>
+  <rect width="960" height="300" rx="20" fill="#111827"/>
+  <g font-family="Segoe UI,Arial,sans-serif">
+    <text x="40" y="51" fill="#fff" font-size="27" font-weight="700">Understanding ping colors</text>
+    <text x="40" y="81" fill="#b9c5d6" font-size="16">Gradient reference · illustration, not an in-game screenshot</text>
+    <rect x="40" y="113" width="650" height="38" rx="10" fill="url(#latency)"/>
+    <path d="M40 160v12M365 160v12M690 160v12" stroke="#8494ab" stroke-width="2"/>
+    <text x="40" y="201" fill="#00e676" font-size="26" font-weight="700">0 ms</text>
+    <text x="365" y="201" fill="#d6cd30" font-size="26" font-weight="700" text-anchor="middle">150 ms</text>
+    <text x="690" y="201" fill="#e53935" font-size="26" font-weight="700" text-anchor="end">≥ 300 ms</text>
+    <rect x="750" y="113" width="170" height="38" rx="10" fill="#535353"/>
+    <text x="835" y="201" fill="#d0d5dd" font-size="22" text-anchor="middle">Unknown</text>
+    <text x="40" y="257" fill="#b9c5d6" font-size="17">The value comes from the server; no extra network measurements.</text>
+  </g>
+</svg>

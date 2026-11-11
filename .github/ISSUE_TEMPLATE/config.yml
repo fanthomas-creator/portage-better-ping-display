@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Security reporting
+    url: https://github.com/fanthomas-creator/portage-better-ping-display/security/policy
+    about: Read the security policy before disclosing a vulnerability.
+  - name: Original Fabric mod
+    url: https://github.com/vladmarica/better-ping-display-fabric
+    about: This repository maintains the Horizon Rust port only.
