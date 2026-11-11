@@ -6,7 +6,7 @@ An unofficial community Rust port of **Better Ping Display — Fabric Edition**,
 
 ![In-game ping: 0 ms and connection bars](docs/images/ping-in-game.png)
 
-*Real screenshot provided by the user, showing the initial 0.1.0 release. Version 0.1.1 preserves this display and introduces the project name and documentation.*
+*showing the initial 0.1.0 release. Version 0.1.1 preserves this display and introduces the project name and documentation.*
 
 ## Installation and use
 
