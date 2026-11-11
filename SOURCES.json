@@ -1,0 +1,34 @@
+{
+  "name": "portage-better-ping-display",
+  "id": "portage_better_ping_display",
+  "version": "0.1.1",
+  "original": {
+    "name": "Better Ping Display - Fabric Edition",
+    "author": "Vlad Marica",
+    "repository": "https://github.com/vladmarica/better-ping-display-fabric",
+    "commit": "96ddda664ff4c4eb2e119c22d3ed6e93b1012294",
+    "license": "MIT",
+    "adapted_files": [
+      "src/main/java/com/vladmarica/betterpingdisplay/hud/PingColors.java",
+      "src/main/java/com/vladmarica/betterpingdisplay/hud/ColorUtil.java",
+      "src/main/java/com/vladmarica/betterpingdisplay/hud/CustomPlayerListHud.java"
+    ]
+  },
+  "horizon": {
+    "repository": "https://github.com/horizon-rust/horizon",
+    "commit": "fdc87aecdbd116bf1e08adcd062fcbaea8c2e2ca",
+    "license": "MIT",
+    "adapted_file": "crates/horizon-client-render/src/tab_list.rs"
+  },
+  "screenshots": {
+    "docs/images/ping-in-game.png": "Real screenshot supplied by the user in this conversation, showing the initial 0.1.0 release."
+  },
+  "port": "Unofficial community Rust adaptation prepared with assistance from Codex.",
+  "icon": {
+    "source": "docs/images/icon.psd",
+    "credit": "Artwork supplied by the port maintainer in this conversation",
+    "export": "400 x 400 PNG; source composite preserved, no redesign"
+  },
+  "port_maintainer": "fanthomas-creator",
+  "port_repository": "https://github.com/fanthomas-creator/portage-better-ping-display"
+}

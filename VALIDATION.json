@@ -1,0 +1,62 @@
+{
+  "date": "2026-11-11",
+  "version": "0.1.1",
+  "name": "portage-better-ping-display",
+  "id": "portage_better_ping_display",
+  "native_package": {
+    "ok": true,
+    "report": {
+      "api": "native-1/fdc87aecdbd116bf1e08adcd062fcbaea8c2e2ca/e59da9094f0c2fdda6c627fe9eff22dec6a906f0",
+      "api_level": null,
+      "capabilities": [],
+      "game": "26.3",
+      "id": "portage_better_ping_display",
+      "kind": "native-mod",
+      "requires": [],
+      "sha256": "a02747a7dc5668482c7f1b9b41b0cdef0edb50cfcfdb1797d6c1398e5d1e8b16",
+      "side": null,
+      "signed": true,
+      "size": 6444,
+      "version": "0.1.1"
+    }
+  },
+  "reproducible_package": true,
+  "rust_logic_tests": {
+    "passed": 1,
+    "failed": 0,
+    "coverage": "Original color anchors, midpoint rounding, unknown and high latency, label formatting"
+  },
+  "official_mixin_apply": {
+    "status": "passed",
+    "injections": 4,
+    "modules": 1,
+    "horizon_revision": "fdc87aecdbd116bf1e08adcd062fcbaea8c2e2ca"
+  },
+  "full_game_build_for_0_1_1": "not repeated for this naming/documentation release",
+  "runtime_evidence": {
+    "version": "0.1.0",
+    "source": "Screenshot provided by user; original version confirmed working by user. Color/display logic unchanged."
+  },
+  "latest_nightly_check": "not performed; required before claiming current Nightly compatibility",
+  "registry_source_repository": "GitHub repository created; source upload in progress",
+  "icon": {
+    "width": 400,
+    "height": 400,
+    "size": 7579
+  },
+  "documentation_images": "real user screenshot, color diagram, user-supplied icon",
+  "documentation_language": "en",
+  "ui_description_language": "en",
+  "gallery_note": "The cropped gameplay image is below the registry minimum; use it in the README only. The color diagram is an illustration, not a gameplay screenshot.",
+  "published": false,
+  "signature": {
+    "public_key": "RWRau4lakVV3M+l+S07QhsxXTFj25ohW+TNQWv609tmh1D7PNLDrxLHd",
+    "signature_file": "portage-better-ping-display-0.1.1.hnmod.minisig",
+    "minisign_verification": "passed",
+    "official_horizon_verification": "passed",
+    "private_key": "stored outside repository, encrypted for the Windows account"
+  },
+  "repository": "https://github.com/fanthomas-creator/portage-better-ping-display",
+  "repository_rules": "Prepared locally; remote enforcement pending",
+  "ci_local_validation": "cargo fmt, cargo test --locked and scripts/check_project.py passed"
+}

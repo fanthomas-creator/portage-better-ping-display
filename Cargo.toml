@@ -1,0 +1,10 @@
+[package]
+name = "portage-better-ping-display"
+version = "0.1.1"
+edition = "2024"
+license = "MIT"
+publish = false
+description = "Unofficial community port of Better Ping Display for Horizon"
+
+[lib]
+path = "mixins/portage_better_ping_display/runtime.rs"
